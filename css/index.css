@@ -134,6 +134,24 @@ html,
 body {
   height: 100%;
 }
-html {
-  background-color: red;
+.container {
+  width: 100%;
+}
+.container {
+  width: 100%;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background-color: rgba(196, 196, 196, 0.7);
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a:hover {
+  color: gray;
 }
