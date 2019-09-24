@@ -155,3 +155,38 @@ header a {
 header a:hover {
   color: gray;
 }
+.main {
+  margin: 2% 0 0 0 ;
+  display: flex;
+  width: 100%;
+}
+.main div {
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.main div img {
+  border-radius: 60%;
+  flex: 1;
+  max-height: 625px;
+  max-width: 500px;
+}
+.main section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.main section h2 {
+  margin: 12.5% 0 12.5% 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.main section p {
+  text-indent: 2%;
+  font-size: 1.2rem;
+}
+.main section * {
+  width: 100%;
+}
