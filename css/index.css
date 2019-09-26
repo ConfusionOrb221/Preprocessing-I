@@ -127,6 +127,10 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+.justifycontent {
+  align-items: center;
+  justify-content: center;
+}
 * {
   box-sizing: border-box;
 }
