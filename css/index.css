@@ -1,1 +1,301 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+.justifycontent {
+  align-items: center;
+  justify-content: center;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  width: 100%;
+  margin: 0;
+}
+span {
+  background-color: black;
+  padding: 2%;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  background-color: #403278;
+}
+header h1,
+header a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+header a:hover {
+  background-color: #897eb2;
+}
+@media only screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+  header h1,
+  header a {
+    flex-flow: wrap;
+    padding: 2% 0 2% 0;
+  }
+}
+.main {
+  padding: 2% 0 2% 0;
+  display: flex;
+  width: 100%;
+  color: white;
+  background-color: #691347;
+}
+.main div {
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.main div img {
+  border-radius: 60%;
+  flex: 1;
+  /*max-height:625px;
+			max-width: 500px;*/
+}
+.main section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.main section h2 {
+  display: flex;
+  height: 25%;
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.main section p {
+  display: flex;
+  height: 75%;
+  font-size: 1.2rem;
+  padding: 0 2% 0 0;
+  text-indent: 2%;
+  margin: 0 0 0 2%;
+  align-items: center;
+  justify-content: center;
+}
+.main section table {
+  border-collapse: collapse;
+  width: 100%;
+  color: black;
+}
+.main section table td,
+.main section table th {
+  border: 1px solid white;
+  padding: 2%;
+}
+.main section table th {
+  background-color: black;
+  color: white;
+}
+.main section table tr:nth-child(2n-1) {
+  background-color: white;
+}
+.main section table tr:nth-child(2n) {
+  background-color: gray;
+  color: white;
+}
+@media only screen and (max-width: 862px) {
+  .main {
+    flex-direction: column;
+  }
+  .main div {
+    display: none;
+  }
+  .main section {
+    width: 100%;
+    padding: 0 2% 0 2%;
+  }
+}
+.bottom-main {
+  width: 100%;
+  display: flex;
+  background-color: #07096b;
+  color: white;
+}
+.bottom-main div {
+  width: 50%;
+}
+.bottom-main div ul {
+  margin: 2%;
+  border: 2px solid white;
+}
+.bottom-main div ul li {
+  border-bottom: 2px solid white;
+  padding: 2%;
+}
+.bottom-main div ul :first-child {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.bottom-main section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 2% 0 2%;
+}
+.bottom-main section h2 {
+  flex-shrink: 3;
+}
+.bottom-main section > * {
+  width: 100%;
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+.footer {
+  display: flex;
+  width: 100%;
+  padding: 5%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #403278;
+  color: white;
+}
